@@ -2,15 +2,19 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        int i = 0;
-        int a = 0;
-        while (i <= 100) {
-            if (i % 3 == 0 ||  i % 5 == 0) {
-                a++;
-            }
-            i++;
-        }
+        int a = multiples(10, 3, 5);
         System.out.println(a);
+    }
+
+    static int multiples(int n, int b, int a) {
+        int count = 0;
+        for (int i = 1; i < n; i++) {
+            if (i % a == 0 ||  i % b == 0) {
+                count++;
+            }
+
+        }
+        return count;
     }
 
 }
