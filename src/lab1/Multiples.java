@@ -2,7 +2,7 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        int a = multiples(10, 3, 5);
+        int a = multiples();
         System.out.println(a);
     }
 
@@ -15,6 +15,10 @@ public class Multiples {
 
         }
         return count;
+    }
+
+    public static int multiples() {
+        return multiples(1000, 3, 5);
     }
 
 }
